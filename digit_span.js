@@ -1,4 +1,4 @@
-/******************* 
+﻿/******************* 
  * Digit_Span *
  *******************/
 
@@ -73,8 +73,27 @@ dialogCancelScheduler.add(quitPsychoJS, '', false);
 psychoJS.start({
   expName: expName,
   expInfo: expInfo,
-  });
-  
+  resources: [
+    // resources:
+    {'name': 'spreadsheets/choose_digitSpan.xlsx', 'path': 'spreadsheets/choose_digitSpan.xlsx'},
+    {'name': 'assets/background.jpg', 'path': 'assets/background.jpg'},
+    {'name': 'assets/continue.png', 'path': 'assets/continue.png'},
+    {'name': 'assets/continue.png', 'path': 'assets/continue.png'},
+    {'name': 'spreadsheets/choose_digitSpan.xlsx', 'path': 'spreadsheets/choose_digitSpan.xlsx'},
+    {'name': 'spreadsheets/conditions.xlsx', 'path': 'spreadsheets/conditions.xlsx'},
+    {'name': 'spreadsheets/eight.xlsx', 'path': 'spreadsheets/eight.xlsx'},
+    {'name': 'spreadsheets/eleven.xlsx', 'path': 'spreadsheets/eleven.xlsx'},
+    {'name': 'spreadsheets/five.xlsx', 'path': 'spreadsheets/five.xlsx'},
+    {'name': 'spreadsheets/four.xlsx', 'path': 'spreadsheets/four.xlsx'},
+    {'name': 'spreadsheets/nine.xlsx', 'path': 'spreadsheets/nine.xlsx'},
+    {'name': 'spreadsheets/seven.xlsx', 'path': 'spreadsheets/seven.xlsx'},
+    {'name': 'spreadsheets/six.xlsx', 'path': 'spreadsheets/six.xlsx'},
+    {'name': 'spreadsheets/ten.xlsx', 'path': 'spreadsheets/ten.xlsx'},
+    {'name': 'spreadsheets/three.xlsx', 'path': 'spreadsheets/three.xlsx'},
+    {'name': 'spreadsheets/twelve.xlsx', 'path': 'spreadsheets/twelve.xlsx'},
+  ]
+});
+
 psychoJS.experimentLogger.setLevel(core.Logger.ServerLevel.EXP);
 
 
